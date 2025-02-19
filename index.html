@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEM - IV</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .menu a {
+            display: block;
+            width: 280px;
+            padding: 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            font-weight: bold;
+            background: linear-gradient(45deg, #ff6a00, #ee0979);
+            border-radius: 8px;
+            transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu a:hover {
+            transform: scale(1.05);
+            background: linear-gradient(45deg, #ee0979, #ff6a00);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <a href="LIC/index.html">Linear Integrated Circuits (LIC)</a>
+            <a href="TLWG/index.html">Transmission Lines and Wave Guides (TLWG)</a>
+            <a href="DSP/index.html">Digital Signal Processing (DSP)</a>
+            <a href="MPMC/index.html">Micro Processor and Micro Controller (MPMC)</a>
+        </div>
+    </div>
+</body>
+</html>
