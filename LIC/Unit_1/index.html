@@ -26,14 +26,29 @@
             margin-bottom: 20px;
         }
 
+        /* Styling for the question */
+        .question {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffcc00;
+            margin-bottom: 10px;
+            padding: 10px 15px;
+            border-left: 5px solid #ffcc00;
+        }
+
         p, ul {
             font-size: 1.2rem;
             line-height: 1.6;
             margin-bottom: 15px;
         }
 
-        strong {
-            color: #ffcc00;
+        /* Styling for Example Section */
+        .example {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-left: 5px solid #00ff99;
+            border-radius: 5px;
+            backdrop-filter: blur(5px);
         }
 
         ul {
@@ -51,6 +66,28 @@
             color: #ffcc00;
         }
 
+        /* Button Style for the YouTube Link */
+        .button-link {
+            display: inline-block;
+            padding: 12px 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(45deg, #ff6a00, #ee0979);
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+
+        .button-link:hover {
+            transform: scale(1.05);
+            background: linear-gradient(45deg, #ee0979, #ff6a00);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             body {
@@ -61,8 +98,17 @@
                 font-size: 2rem;
             }
 
+            .question {
+                font-size: 1.3rem;
+            }
+
             p, ul li {
                 font-size: 1rem;
+            }
+
+            .button-link {
+                font-size: 1rem;
+                padding: 10px 15px;
             }
         }
     </style>
@@ -70,25 +116,31 @@
 <body>
     <h1>Operational Amplifier (Op-Amp)</h1>
 
-    <p><strong>Q: What is an Op-Amp?</strong></p>
+    <!-- Question inside a styled div -->
+    <div class="question">Q: What is an Op-Amp?</div>
     <p>A: An Operational Amplifier (Op-Amp) is a high-gain voltage amplifier with differential inputs and a single-ended output. It is one of the most widely used components in analog electronics.</p>
 
-    <p><strong>Q: How does an Op-Amp work?</strong></p>
-    <p>A: Imagine you have a magic box 🎩 that listens to two sounds 🎶 (voltages) and then speaks louder 📢 based on the difference between them. This magic box is called an Operational Amplifier (Op-Amp)!</p>
+    <!-- Example Section -->
+    <div class="example">
+        <p><strong>Example:</strong></p>
+        <p>Imagine you have a magic box 🎩 that listens to two sounds 🎶 (voltages) and then speaks louder 📢 based on the difference between them. This magic box is called an Operational Amplifier (Op-Amp)!</p>
+        <p>An Op-Amp has two ears 👂👂 (inputs) and one mouth 🗣️ (output):</p>
+        <ul>
+            <li>One ear is called the (+) Non-Inverting Input</li>
+            <li>The other ear is called the (-) Inverting Input</li>
+            <li>The mouth (Output) speaks out the difference between the sounds it hears!</li>
+            <li>If the + input is louder, the Op-Amp shouts positive 🔊 (+V).</li>
+            <li>If the - input is louder, the Op-Amp shouts negative 🔊 (-V).</li>
+        </ul>
+    </div>
 
-    <p><strong>Q: What are the inputs and output of an Op-Amp?</strong></p>
-    <p>A: An Op-Amp has two ears 👂👂 (inputs) and one mouth 🗣️ (output):</p>
-    <ul>
-        <li>One ear is called the (+) Non-Inverting Input</li>
-        <li>The other ear is called the (-) Inverting Input</li>
-        <li>The mouth (Output) speaks out the difference between the sounds it hears!</li>
-    </ul>
+    <!-- Styled Button Link -->
+    <a href="https://www.youtube.com/watch?v=lJDjWZqhpVc" class="button-link" target="_blank">IF YOU WANT TO GO DEEP (OUT OF SYLLABUS)</a>
 
-    <p><strong>Q: What happens when the inputs change?</strong></p>
-    <p>A:</p>
-    <ul>
-        <li>If the + input is louder, the Op-Amp shouts positive 🔊 (+V).</li>
-        <li>If the - input is louder, the Op-Amp shouts negative 🔊 (-V).</li>
-    </ul>
+    <div class="question">Q: Internal block diagram of OP-AMP</div>
+    <div>
+        <img src="images/OP-AMP block diagram.avif" alt="op-amp-easy">
+        <img src="images/Op-AMP block diagram1.jpg" alt="op-amp-indepth">
+    </div>
 </body>
 </html>
