@@ -4,8 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unit-1</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: auto;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            font-family: Arial, sans-serif;
+            color: white;
+            padding: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        p, ul {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        strong {
+            color: #ffcc00;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        ul li::before {
+            content: "• ";
+            font-size: 1.2rem;
+            color: #ffcc00;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p, ul li {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>I LOVE YOU d PONDATTI❤️😘</h1>
+    <h1>Operational Amplifier (Op-Amp)</h1>
+
+    <p><strong>Q: What is an Op-Amp?</strong></p>
+    <p>A: An Operational Amplifier (Op-Amp) is a high-gain voltage amplifier with differential inputs and a single-ended output. It is one of the most widely used components in analog electronics.</p>
+
+    <p><strong>Q: How does an Op-Amp work?</strong></p>
+    <p>A: Imagine you have a magic box 🎩 that listens to two sounds 🎶 (voltages) and then speaks louder 📢 based on the difference between them. This magic box is called an Operational Amplifier (Op-Amp)!</p>
+
+    <p><strong>Q: What are the inputs and output of an Op-Amp?</strong></p>
+    <p>A: An Op-Amp has two ears 👂👂 (inputs) and one mouth 🗣️ (output):</p>
+    <ul>
+        <li>One ear is called the (+) Non-Inverting Input</li>
+        <li>The other ear is called the (-) Inverting Input</li>
+        <li>The mouth (Output) speaks out the difference between the sounds it hears!</li>
+    </ul>
+
+    <p><strong>Q: What happens when the inputs change?</strong></p>
+    <p>A:</p>
+    <ul>
+        <li>If the + input is louder, the Op-Amp shouts positive 🔊 (+V).</li>
+        <li>If the - input is louder, the Op-Amp shouts negative 🔊 (-V).</li>
+    </ul>
 </body>
 </html>
